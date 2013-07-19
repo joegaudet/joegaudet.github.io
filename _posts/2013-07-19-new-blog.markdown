@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Welcome to Joe's new blog."
+date:   2013-07-19 16:35:07
+categories: welcome 
+---
+
+Yo.
