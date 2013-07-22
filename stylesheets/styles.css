@@ -259,3 +259,13 @@ img.joe {
   border-radius: 64px;
 }
 
+ @font-face {
+  font-family: 'Social';
+  src: url('Socialico.otf');
+  src: url('Socialico.ttf');
+}
+
+.social {
+  font-family: 'Social';
+  font-size: 50px;
+}

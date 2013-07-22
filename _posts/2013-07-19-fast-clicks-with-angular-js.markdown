@@ -7,13 +7,13 @@ comments: true
 
 At Learndot we've been building with AngularJS for about a month. Our first project was porting the 'Learner experience' from our existing SproutCore project and bringing it to Angular. This will be my first of a few posts detailing some interesting fun bits we've put together while playing with it. 
 
-One of the short comings to building a native feel web app in iOS is the ~300ms delay on click handlers. This delay is due to the browser waiting for a second tap to fire a double click event. 
+One of the shortcomings to building a native feel web app in iOS is the ~300ms delay on click handlers. This delay is due to the browser waiting for a second tap to fire a double click event. 
 
 {% highlight html %}
 	<button onclick="someClickFunction()">An Button</button>
 {% endhighlight %}
 
-In most cases this feature is more of a bug than anything, creating a sluggish user experience. Combined with the iOS tap hight and html buttons really won't cut the mustard.
+In most cases this feature is more of a bug than anything, creating a sluggish user experience - combined with the webkit tap highlight effect and html buttons really won't cut the mustard.
 
 Google has written a really great article about [implementing fast buttons](https://developers.google.com/mobile/articles/fast_buttons). 
 
@@ -23,9 +23,9 @@ Directives are really the 'killer feature' of Angular, allowing you to extend th
 	<button fast-click="someClickFunction()">An Button</button>
 {% endhighlight %}
 
-Before we get started, you should have a functional knowledge of AngularJS [directives](http://docs.angularjs.org/guide/directive), there's nothing fancy going on in this one, but just the same the details of how they function won't be covered. Also you should give the google article a read through to understand the cases that we are trying to handle.
+Before we get started, you should have a functional knowledge of AngularJS [directives](httpu//docs.angularjs.org/guide/directive). There's nothing fancy going on in this one, but just the same the details of how they function won't be covered. Also you should give the google article a read through to understand the cases that we are trying to handle.
 
-First things first, make sure you have Modernizr included in your project, I created a simple provider that will allow Modernizr to be injected into our directive rather than accessed globally. We use Modernizr to detect if we are on a touch device or not later on in the directive.
+First things first: make sure you have Modernizr included in your project, I created a simple provider that will allow Modernizr to be injected into our directive rather than accessed globally. We use Modernizr to detect if we are on a touch device or not later on in the directive.
 
 {% highlight js %}
 angular
@@ -76,7 +76,7 @@ clickFunction = function (event) {
 
 {% endhighlight %}
 
-Now we setup our click handlers, the main difference between this implementation and the google implementation is that we use Modernizer to determine if we have a touch enabled device or not. This prevents us from needing to attach to the click function and  
+Now we setup our click handlers, the main difference between this implementation and the google implementation is that we use Modernizer to determine if we have a touch enabled device or not. This prevents us from needing to attach to the click function as of the writing of the google article it may have been needed in order to have the browser treat the button as a button, it does not appear to be the case any longer (verified on android and iOS latest versions)
 
 This approach also prevents us from needing a click debouncer (or buster) which simplifies things a great deal by avoiding putting event handlers on the body - it also keeps things contained to this one directive.
 
@@ -131,7 +131,7 @@ if (!Modernizr.touch) {
 
 {% endhighlight %}
 
-And that's it, you can now use the fast click directive exactly as you would ng-click. If you want to be fully html5 compliant toss an x-fast-click on the font of there, or a data-fast-click, just be sure to update the directive definition.
+And that's it, you can now use the fast click directive exactly as you would ng-click. If you want to be fully html5 compliant toss an x- or data- in front of fast-click, just be sure to update the directive definition.
 
 All of the code is available here : [https://github.com/joegaudet/ng-fast-click](https://github.com/joegaudet/ng-fast-click).
 
