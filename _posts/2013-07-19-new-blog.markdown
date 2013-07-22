@@ -2,6 +2,7 @@
 layout: post
 title:  "Fast clicks with AngularJS"
 date:   2013-07-19 16:35:07
+comments: true
 ---
 
 At Learndot we've been building with AngularJS for about a month. Our first project was porting the 'Learner experience' from our existing SproutCore project and bringing it to Angular. This will be my first of a few posts detailing some interesting fun bits we've put together while playing with it. 
