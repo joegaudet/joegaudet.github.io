@@ -25,7 +25,7 @@ Directives are really the 'killer feature' of Angular, allowing you to extend th
 
 Before we get started, you should have a functional knowledge of AngularJS [directives](httpu//docs.angularjs.org/guide/directive). There's nothing fancy going on in this one, but just the same the details of how they function won't be covered. Also you should give the google article a read through to understand the cases that we are trying to handle.
 
-First things first: make sure you have Modernizr included in your project, I created a simple provider that will allow Modernizr to be injected into our directive rather than accessed globally. We use Modernizr to detect if we are on a touch device or not later on in the directive.
+First things first: make sure you have Modernizr included in your project, I created a simple provider that will allow Modernizr to be injected into our directive rather than accessed globally. We use Modernizr to detect if we are on a touch device, or not, later on in the directive.
 
 {% highlight js %}
 angular
