@@ -14,7 +14,7 @@ One of the difficulties in building a native feeling web app in iOS is the ~300m
 	<button onclick="someClickFunction()">An Button</button>
 {% endhighlight %}
 
-In most cases this feature is more of a bug than anything, creating a sluggish user experience - combined with the webkit tap highlight effect and html buttons really won't cut the mustard.
+In most cases this feature is more of a bug than anything, creating a sluggish user experience.
 
 Google has written a really great article about [implementing fast buttons](https://developers.google.com/mobile/articles/fast_buttons). 
 
