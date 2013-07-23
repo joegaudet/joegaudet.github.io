@@ -257,15 +257,22 @@ img.joe {
   width: 128px;
   height: 128px;
   border-radius: 64px;
+  margin-bottom: 10px;
 }
 
- @font-face {
-  font-family: 'Social';
-  src: url('Socialico.otf');
-  src: url('Socialico.ttf');
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('MonoSocialIconsFont-1.10.eot');
+    src: url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .social {
-  font-family: 'Social';
+  font-family: 'Mono Social Icons Font';
   font-size: 50px;
 }
