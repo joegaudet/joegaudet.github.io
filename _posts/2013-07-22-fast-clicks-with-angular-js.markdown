@@ -137,7 +137,11 @@ if (!Modernizr.touch) {
 
 And that's it, you can now use the fast click directive exactly as you would ng-click. If you want to be fully html5 compliant toss an x- or data- in front of fast-click, just be sure to update the directive definition.
 
-All of the code is available here : [https://github.com/joegaudet/ng-fast-click](https://github.com/joegaudet/ng-fast-click). If you've got any questions, comments, problems, suggestions or otherwise just wanna chat - comment below, or ping me on [twitter](https://twitter.com/joegaudet).
+All of the code is available here: 
+
+[https://github.com/joegaudet/ng-fast-click](https://github.com/joegaudet/ng-fast-click)
+
+If you've got any questions, comments, problems, suggestions or otherwise just wanna chat - comment below, or ping me on [twitter](https://twitter.com/joegaudet).
 
 
 .joe out.
