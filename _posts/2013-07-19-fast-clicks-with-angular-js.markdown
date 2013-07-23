@@ -5,7 +5,7 @@ date:   2013-07-19 16:35:07
 comments: true
 ---
 
-At Learndot we've been building with AngularJS for about a month. Our first project was porting the 'Learner experience' from our existing SproutCore project and bringing it to Angular. This will be my first of a few posts detailing some interesting fun bits we've put together while playing with it. 
+At Learndot we've been building with AngularJS for about a month. Our first project was porting the 'Learner experience' from our existing SproutCore project and bringing it to Angular. This will be my first of a few posts detailing some interesting fun bits we've put together while playing with it, and it will go over implementing a fast click directive for mobile web experiences.
 
 One of the shortcomings to building a native feeling web app in iOS is the ~300ms delay on click handlers. This delay is due to the browser waiting for a second tap to fire a double click event. 
 
@@ -22,6 +22,7 @@ Directives are really the 'killer feature' of Angular, allowing you to extend th
 {% highlight html %}
 	<button fast-click="someClickFunction()">An Button</button>
 {% endhighlight %}
+
 
 Before we get started, you should have a functional knowledge of AngularJS [directives](httpu//docs.angularjs.org/guide/directive). There's nothing fancy going on in this one, but just the same the details of how they function won't be covered. Also you should give the google article a read through to understand the cases that we are trying to handle.
 
