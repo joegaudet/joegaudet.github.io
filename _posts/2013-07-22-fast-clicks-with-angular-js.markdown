@@ -25,7 +25,7 @@ Directives are really the 'killer feature' of Angular, allowing you to extend th
 {% endhighlight %}
 
 
-Before we get started, you should have a functional knowledge of AngularJS [directives](httpu//docs.angularjs.org/guide/directive). There's nothing fancy going on in this one, but the details of how they function won't be covered. Also you should give the Google article a read to understand the cases that we are trying to handle.
+Before we get started, you should have a functional knowledge of AngularJS [directives](httpu//docs.angularjs.org/guide/directive). There's nothing fancy going on in this one, but the details of how they function won't be covered.Also you should give the Google article a read to understand the cases that we are trying to handle.
 
 First make sure you have Modernizr included in your project. I created a simple provider that will allow Modernizr to be injected into our directive rather than accessed globally. We use Modernizr to detect if we are on a touch device later on in the directive.
 
@@ -137,7 +137,8 @@ if (!Modernizr.touch) {
 
 And that's it, you can now use the fast click directive exactly as you would ng-click. If you want to be fully html5 compliant toss an x- or data- in front of fast-click, just be sure to update the directive definition.
 
-All of the code is available here : [https://github.com/joegaudet/ng-fast-click](https://github.com/joegaudet/ng-fast-click). If you've got any questions, comments, problems, suggestions or otherwise just wanna chat - comment below, or ping me on [https://twitter.com/joegaudet](twitter).
+All of the code is available here : [https://github.com/joegaudet/ng-fast-click](https://github.com/joegaudet/ng-fast-click). If you've got any questions, comments, problems, suggestions or otherwise just wanna chat - comment below, or ping me on [twitter](https://twitter.com/joegaudet).
+
 
 .joe out.
 
