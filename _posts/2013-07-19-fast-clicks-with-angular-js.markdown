@@ -7,7 +7,7 @@ comments: true
 
 At Learndot we've been building with AngularJS for about a month. Our first project was porting the 'Learner experience' from our existing SproutCore project and bringing it to Angular. This will be my first of a few posts detailing some interesting fun bits we've put together while playing with it. 
 
-One of the shortcomings to building a native feel web app in iOS is the ~300ms delay on click handlers. This delay is due to the browser waiting for a second tap to fire a double click event. 
+One of the shortcomings to building a native feeling web app in iOS is the ~300ms delay on click handlers. This delay is due to the browser waiting for a second tap to fire a double click event. 
 
 {% highlight html %}
 	<button onclick="someClickFunction()">An Button</button>
