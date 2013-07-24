@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Fast clicks with AngularJS"
-date:   2013-07-19 16:35:07
 comments: true
 categories: [angular, mobile]
 ---
