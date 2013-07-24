@@ -4,10 +4,9 @@ title:  "Styling Radio Buttons with CSS"
 comments: true
 categories: [css, html]
 ---
+Working off the article found [here](http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons/), I've created a quick example of pure css-html styled radio buttons. 
 
-Working off the article found [here](http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons/), here's a quick example of pure css-html styled radio buttons. 
-
-The linked article does fine for creating the style, but setting the radio button to display: none, prevents the radio group from being able to gain focus. As such your website will suffer some in the usability department. 
+The linked article does fine for creating the style, but setting the radio button to `display: none`, prevents the radio group from being able to gain focus. As such your website will suffer some in the usability department. 
 
 As before we start with a radio group, for this example I've put them in a list.
 
@@ -46,7 +45,7 @@ As before we start with a radio group, for this example I've put them in a list.
 
 {% endhighlight %}
 
-Additionally you'll notice that I've included two spans, this is so we can have a dot in the middle of our pure css radio group.
+Additionally you'll notice that I've included two spans, the second span is used to create the dot in the middle of the radio button.
 
 And now for some style.
 
@@ -65,7 +64,7 @@ input[type="radio"] {
 
 {% endhighlight %}
 
-Next we make use of the + operator and the :focus and :checked selectors to style the span nodes we've included with our label. 
+Next we make use of the `+` operator and the `:focus` and `:checked` selectors to style the span nodes we've included with our label. 
 
 {% highlight css %}
 // Matches the direct descendant of a label preceded by a 
