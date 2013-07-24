@@ -116,7 +116,10 @@ input[type="radio"]:focus + label > span {
 
 ![Pure CSS styled radio buttons](images/css-radio-buttons.png)
 
-And there you have it, a pure css + html styled radio button that answers to tab / arrow events. 
+And there you have it, a pure css + html styled radio button that answers to tab / arrow events. The css can be found here: [http://cssdeck.com/labs/13ykupq3](http://cssdeck.com/labs/13ykupq3), to see the focus effect you must first click in the output window to focus the iframe.
+
+
+
 
 Feel free to comment and correct below.
 
