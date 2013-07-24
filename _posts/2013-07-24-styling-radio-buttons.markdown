@@ -14,34 +14,34 @@ As before we start with a radio group, for this example I've put them in a list.
 
 <ul class="radio-group">
 	<li>
-			<input id="choice-a" type="radio" />
-			<label for='choice-a'>
-				<span></span><span></span>
-				Choice A
-			</label>
+		<input id="choice-a" type="radio" name="g" />
+		<label for='choice-a'>
+			<span><span></span></span>
+			Choice A
+		</label>
 	</li>
 	<li>
-			<input id="choice-b" type="radio" />
-			<label for='choice-b'>
-				<span><span></span></span>
-				Choice B
-			</label>
+		<input id="choice-b" type="radio" name="g" />
+		<label for='choice-b'>
+			<span><span></span></span>
+			Choice B
+		</label>
 	</li>
 	<li>
-			<input id="choice-c" type="radio" />
-			<label for='choice-c'>
-				<span><span></span></span>
-				Choice C
-			</label>
+		<input id="choice-c" type="radio" name="g" />
+		<label for='choice-c'>
+			<span><span></span></span>
+			Choice C
+		</label>
 	</li>
 	<li>
-			<input id="choice-d" type="radio" />
-			<label for='choice-d'>
-				<span></span><span></span>
-				Choice D
-			</label>
+		<input id="choice-d" type="radio" name="g" />
+		<label for='choice-d'>
+			<span><span></span></span>
+			Choice D
+		</label>
 	</li>
-</ul>	
+</ul> 
 
 {% endhighlight %}
 
@@ -54,7 +54,9 @@ First we position the list relatively, and hide the radio button by making trans
 {% highlight css %}
 
 ul.radio-group li {
-	position: relative;		
+    position: relative;
+    list-style: none;
+    padding: 10px;
 }
 
 input[type="radio"] {
@@ -67,49 +69,47 @@ input[type="radio"] {
 Next we make use of the `+` operator and the `:focus` and `:checked` selectors to style the span nodes we've included with our label. 
 
 {% highlight css %}
-// Matches the direct descendant of a label preceded by a 
-// radio button 
+/* Matches the direct descendant of a label preceded by a 
+   radio button */
 input[type="radio"] + label > span {
-  display: block;
-  border-radius: 10px;
+  position: relative;
+  border-radius: 14px;
   width: 20px;
   height: 20px;
   background-color: #f0f0f0;
   border: 1px solid #bcbcbc;
-  box-shadow: 0px 1px 3px rgba(black, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   margin: 0 1em 0 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-// Matches the direct descendant of a label preceded by a 
-// checked radio button 
+/* Matches the direct descendant of a label preceded by a 
+   checked radio button */
 input[type="radio"]:checked + label > span {
   background: linear-gradient(#a0e5f8, #75c7dc);
   background: -webkit-linear-gradient(#a0e5f8, #75c7dc);
   border-color: #41a6bf;
-  box-shadow: 0px 1px 2px rgba(#41a6bf, 0.9) inset;
+  box-shadow: 0px 1px 2px rgba(65, 166, 191, 0.9) inset;
 }
 
-// Matches a span contained by the direct descendant 
-// of a label preceded by a checked radio button
+/* Matches a span contained by the direct descendant 
+   of a label preceded by a checked radio button */
 input[type="radio"]:checked + label > span span {
-   display: inline-block;
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    border-radius: 5px;
-    border: none;
-    background: #167c95;
-    background: linear-gradient(lighten(#167c95, 1%), 
-    						darken(#167c95, 1%));
-    background: -webkit-linear-gradient(lighten(#167c95, 1%), 
-    						darken(#167c95, 1%));
-    box-shadow: 0px 1px rgba(white, 0.3);
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	left: 6px;
+	top: 6px;
+	border-radius: 5px;
+	border: none;
+	background: #167c95;
+	box-shadow: 0px 1px rgba(255, 255, 255, 0.3);
 }
 
 input[type="radio"]:focus + label > span {
-  box-shadow: 0px 0px 6px rgba(#3fa5be, 1);
+  box-shadow: 0px 0px 6px rgba(63, 165, 190, 1);
 }
 
 {% endhighlight %}
