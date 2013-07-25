@@ -49,7 +49,7 @@ Additionally you'll notice that I've included two spans, the second span is used
 
 And now for some style.
 
-First we position the list relatively, and hide the radio button by making transparent and positioning it absolutely. This hides it in the top left corner of every list item making sure the document scrolls to the properly location when the button gain focus - a pleasant bonus of this approach is it doesn't mess with your layout of the span and label.
+First we position the list relatively, and hide the radio button by making transparent and positioning it absolutely (`opacity: 0; position: absolute;`). This hides it in the top left corner of every list item making sure the document scrolls to the proper location when the button gain focus - a pleasant bonus of this approach is it doesn't mess with your layout of the span and label.
 
 {% highlight css %}
 
@@ -116,7 +116,7 @@ input[type="radio"]:focus + label > span {
 
 ![Pure CSS styled radio buttons](images/css-radio-buttons.png)
 
-And there you have it, a pure css + html styled radio button that answers to tab / arrow events. A working example can be found [here](http://cssdeck.com/labs/13ykupq3), to see the focus effect you must first click in the output window to focus the iframe.
+And there you have it, a pure css + html styled radio button that answers to tab / arrow events. A working example can be found [here](http://cssdeck.com/labs/13ykupq3). To see the focus effect you must first click in the output window to focus the iframe.
 
 Feel free to comment and correct below.
 
