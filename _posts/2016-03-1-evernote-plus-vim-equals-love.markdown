@@ -7,9 +7,9 @@ categories: [random]
 
 Thanks to many years of badgering by [@jamesgolick](https://twitter.com/jamesjolick), [@prlambert](https://twitter.com/prlambert), 
 and [@agonigberg](https://twitter.com/agonigberg) I use Vim or IDEAVim for pretty much everything. For my money it's the 
-best way to edit structured text - I even go so far as to write these posts using markdown and vim (Checkout if you'd like to do the same [https://jekyllrb.com/](https://jekyllrb.com/).
+best way to edit structured text - I even go so far as to write these posts using markdown and vim (Checkout if you'd like to do the same [https://jekyllrb.com/](https://jekyllrb.com/)).
 
-But, this isn't a post to espouse the many wonders of Vim - though they be countless, not least of which is its presence on
+But, this isn't a post to espouse the many wonders of Vim--though they be countless--not least of which is its presence on
 nearly every server everywhere ever. But rather to share the process of making Vim and Evernote the best of friends.
 
 ### Sharing is Caring 
@@ -23,8 +23,8 @@ sharing, and organization tool.
 
 ### Optional: Setup Two Factor Authentication 
 
-If you're like me and keep work notes in Evernote, 2-FA is the way to go. I try and make sure its enabled on every service
-that offers it.
+If you're like me and keep work notes in Evernote, 2-FA is the way to go to keep your security folks happy and your IP safe. 
+In general I try and make sure its enabled on every service that offers it (gmail, github et al).
 
 Follow these instructions to get it setup: 
 
