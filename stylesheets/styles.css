@@ -1,9 +1,10 @@
 
 body {
     padding: 50px;
-    font-family: "Insider Regular", Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -101,6 +102,7 @@ header {
     width: 270px;
     float: left;
     position: fixed;
+    font-family: "Insider Medium", Arial, Helvetica, sans-serif;
 }
 
 header ul {
@@ -162,9 +164,15 @@ header ul a strong {
 }
 
 section {
-    width: 500px;
+    width: 600px;
     float: right;
     padding-bottom: 50px;
+    margin-right: -50px;
+    font-size: 110%;
+}
+
+section p {
+    text-align: justify;
 }
 
 small {
@@ -184,6 +192,7 @@ footer {
     position: fixed;
     bottom: 50px;
     font-weight: 100;
+    font-family: "Insider Medium", Arial, Helvetica, sans-serif;
 }
 
 @media print, screen and (max-width: 960px) {
