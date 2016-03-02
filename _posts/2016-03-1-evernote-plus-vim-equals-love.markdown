@@ -2,8 +2,7 @@
 layout: post
 title:  "Evernote + Vim = ♥"
 comments: true
-category: vim
-categories: "vim, evernote"
+categories: [random, vim, evernote]
 ---
 
 Thanks to many years of badgering by [@jamesgolick](https://twitter.com/jamesjolick), [@prlambert](https://twitter.com/prlambert), 
