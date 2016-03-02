@@ -32,7 +32,7 @@ Follow these instructions to get it setup:
 
 ### Installing Geeknote
 
-Geeknote is a cli to interface with Evernote's REST APIs - you won't need to do much other than set it up and and authenticate 
+Geeknote is a CLI to interface with Evernote's REST APIs - you won't need to do much other than set it up and and authenticate 
 your self with your user name and password  (If you've setup 2-FA you will need your authenticator code as well)
 
 {% highlight bash %}
