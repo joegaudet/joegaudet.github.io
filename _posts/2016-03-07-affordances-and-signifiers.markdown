@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "Affordances + Signifiers and Moscow Mules"
+title:  "Affordances, Signifiers, and Moscow Mules"
 comments: true
 categories: [design]
 ---
 
 I take pride in really caring about the design of the software I build. I can usually tell when it's good, when the visuals and 
-interactions are dialled in. But, I rarely have a clear idea of how to get there. Thankfully, I've been lucky over the 
-years to work with some really great designers[^1]. who have helped show me the way. 
+interactions are dialled in. But, I rarely have a clear idea of how to get there. 
+
+Thankfully, I've been lucky over the years to work with some really great designers[^1] who have helped show me the way. 
 
 In an effort to learn some more of their language I've been reading '[The Design of Everyday Things](https://books.google.ca/books?id=nVQPAAAAQBAJ&source=gbs_similarbooks)'.
 So far it's a very interesting read. An analysis of the design and psychology of everyday things. I--like many no doubt-- 
@@ -21,7 +22,7 @@ This video about these so called 'norman doors' from vox - brought me to the boo
 
 ### Some Terminology
 
-The first few chapters introduce two basic terms 'Affordances' and 'Signifiers' - here are some definitions I've dug up:
+The first few chapters introduce two basic terms 'Affordances' and 'Signifiers': 
 
 > An affordance is a relation between an object or an environment and an organism that, 
 through a collection of stimuli, affords the opportunity for that organism to perform an action. 
