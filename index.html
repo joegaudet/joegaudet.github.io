@@ -119,7 +119,7 @@
         }
 
         .about.open {
-            max-height: 1000px; /* large enough for full content */
+            max-height: 2000px; /* large enough for full content */
             opacity: 1;
         }
 
@@ -131,6 +131,12 @@
         .about li {
             margin-bottom: 0.3rem;
             text-align: left;
+        }
+
+        .availability {
+            color: var(--accent);
+            font-weight: 600;
+            text-align: center;
         }
 
         h2 {
@@ -150,7 +156,7 @@
 
             /* Auto-expand on mobile */
             .about {
-                max-height: 1000px;
+                max-height: 2000px;
                 opacity: 1;
                 letter-spacing: 0.2rem;
             }
@@ -175,22 +181,28 @@
         Singer of Musicals.</h2>
     <button class="toggle-about" onclick="toggleAbout()">About Me</button>
     <div class="about" id="about">
-        <p>I specialize in designing scalable, intelligent systems that eliminate operational inefficiencies and drive
-            strategic impact. With 20+ years of hands-on experience delivering products across web, mobile, and embedded
-            platforms. I’ve worked across multiple industries, including energy, education, social media, logistics, and
-            ecommerce.</p>
+        <p class="availability">Currently between roles and open to Staff or Principal engineering work.</p>
+        <p>Engineer with 20 years of hands-on experience shipping products across web, mobile, and embedded platforms,
+            in industries including energy, education, social media, logistics, and ecommerce. Founded Learndot and led
+            it to acquisition; led engineering at Foodee through its acquisition by Sodexo. Formerly a Director and
+            founder, now focused on Staff/Principal IC work: building well-designed systems that remove operational
+            toil.</p>
         <h3>Core Skills</h3>
         <p>
-            System Design | Full-stack Software Engineering | Frontend: JavaScript / TypeScript (Ember, React,
-            AngularJS) |Backend: Ruby/Rails, Python, Scala, Java | DevOps & Agile Practices | Distributed Systems & APIs
-            | AI & LLM Integrations (OpenAI, etc.)
+            Full-stack Software Engineering | System Design &amp; Distributed Systems | Frontend: TypeScript /
+            JavaScript (React, MapLibre, Ember) | Backend: Ruby/Rails, Python (FastAPI), Scala, Java | Data:
+            PostgreSQL/PostGIS, DuckDB | AI &amp; LLM Integrations (OpenAI APIs, incl. Realtime) | AI-assisted
+            Development | DevOps, CI/CD &amp; Agile Practices
         </p>
         <h3>Impact Highlights</h3>
-        <p>
-            Led technology through two acquisitions | Scaled a team from 6 to 20+ post acquisition | Designed and
-            implemented an AI based scheduling system reducing real people ops overhead by over 50% | Spearheaded CI/CD
-            transformation, cutting release cycles from 30 days to daily
-        </p>
+        <ul>
+            <li>Designed and implemented an AI-based scheduling system that cut manual operations overhead by more than
+                50% and became key IP in Foodee's acquisition by Sodexo
+            </li>
+            <li>Led technology through two acquisitions (Learndot; Foodee/Sodexo)</li>
+            <li>Scaled an engineering team from 6 to 20+, designing the hiring and interview process</li>
+            <li>Transformed CI/CD practice, cutting release cycles from 30 days to daily deploys</li>
+        </ul>
 
     </div>
     <div class="icon-links">
