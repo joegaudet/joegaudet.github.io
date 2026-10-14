@@ -161,7 +161,7 @@ code, pre {
 
 .hero {
     position: relative;
-    min-height: min(92svh, 60rem);
+    min-height: min(80svh, 50rem);
     display: flex;
     align-items: flex-start;
     color: var(--hero-ink);
@@ -200,6 +200,7 @@ code, pre {
     position: relative;
     z-index: 2;
     padding-top: clamp(6rem, 16svh, 10rem);
+    padding-bottom: 7rem; /* clears the trail's negative margin */
 }
 
 .hero .avatar {
@@ -247,6 +248,8 @@ code, pre {
 
 .track {
     position: relative;
+    z-index: 2;
+    margin-top: -5rem; /* start the trail inside the photo's fade */
     padding: 1rem 0 4rem 2rem;
 }
 
@@ -269,8 +272,9 @@ code, pre {
 .track > section > h2::before {
     content: "";
     position: absolute;
-    left: calc(-2rem + 0.4rem - 5px);
-    top: 0.45em;
+    left: calc(-2rem + 0.4rem + 1px); /* centre of the 2px dashed line */
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 12px;
     height: 12px;
     border-radius: 50%;
