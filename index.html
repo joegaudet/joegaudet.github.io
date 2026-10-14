@@ -3,231 +3,148 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-    <title>Joe Gaudet – Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Joe Gaudet – Consulting Staff Engineer</title>
+    <meta name="description" content="Joe Gaudet is a consulting Staff Engineer in Vancouver, BC, and the author of harnessed and real-enums."/>
+    <meta property="og:title" content="Joe Gaudet – Consulting Staff Engineer"/>
+    <meta property="og:description" content="Twenty years shipping software, two acquisitions, and open source: harnessed and real-enums."/>
+    <meta property="og:image" content="https://joegaudet.com/images/background-1200.jpg"/>
+    <meta property="og:url" content="https://joegaudet.com/"/>
+    <meta name="twitter:card" content="summary_large_image"/>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
-    <style>
-        :root {
-            --accent: #6ee7b7;
-            --text: #f8fafc;
-            --muted: #cbd5e1;
-            --hover: #34d399;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background: url('images/background.jpg') no-repeat center center / cover;
-            color: var(--text);
-            min-height: 100vh; /* instead of height */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-sizing: border-box;
-            padding: 2rem;
-        }
-
-        .card {
-            margin: auto;
-            background: rgba(30, 41, 59, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 2rem;
-            border-radius: 1.5rem;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
-            max-width: 480px;
-            width: 90%;
-            text-align: center;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 0.2rem;
-        }
-
-        h2 {
-            font-size: 1.1rem;
-            color: var(--muted);
-            margin-bottom: 1rem;
-        }
-
-        p {
-            font-size: 1rem;
-            color: var(--muted);
-            margin-bottom: 1.5rem;
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: var(--hover);
-        }
-
-        .icon-links {
-            display: flex;
-            justify-content: center;
-            font-size: 1.5rem;
-        }
-
-        .icon-links a {
-            margin: 0 0.6rem;
-        }
-
-        .profile-pic img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            margin-bottom: 1rem;
-        }
-
-        .toggle-about {
-            margin-bottom: 1rem;
-            padding: 0.5rem 1rem;
-            background: transparent;
-            color: var(--accent);
-            border: 1px solid var(--accent);
-            border-radius: 9999px;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .toggle-about:hover {
-            background: var(--accent);
-            color: #0f172a;
-        }
-
-        .about {
-            overflow: hidden;
-            max-height: 0;
-            opacity: 0;
-            transition: max-height 0.6s ease, opacity 0.3s ease;
-        }
-
-        .about.open {
-            max-height: 2000px; /* large enough for full content */
-            opacity: 1;
-        }
-
-        .about ul {
-            padding-left: 1.2rem;
-            margin-top: 0.5rem;
-        }
-
-        .about li {
-            margin-bottom: 0.3rem;
-            text-align: left;
-        }
-
-        .availability {
-            color: var(--accent);
-            font-weight: 600;
-            text-align: center;
-        }
-
-        h2 {
-            text-align: justify;
-            letter-spacing: 0.1rem;
-        }
-
-        .about {
-            text-align: justify;
-        }
-
-        @media (max-width: 640px) {
-
-            .card {
-                width: 100%;
-            }
-
-            /* Auto-expand on mobile */
-            .about {
-                max-height: 2000px;
-                opacity: 1;
-                letter-spacing: 0.2rem;
-            }
-
-            .toggle-about {
-                display: none;
-            }
-
-            .about {
-                text-align: justify;
-            }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400&display=swap">
+    <link rel="stylesheet" href="site.css">
+    <script src="theme.js"></script>
 </head>
 <body>
-<div class="card">
-    <div class="profile-pic">
-        <img src="/images/profile-picture.jpg" alt="Joe Gaudet"/>
-    </div>
-    <h1>Joe Gaudet</h1>
-    <h2>Programmer of Computers, General Nerd, Rotator of Shapes, Ski & Mountain Bike enthusiast, Amateur Pugilist &
-        Singer of Musicals.</h2>
-    <button class="toggle-about" onclick="toggleAbout()">About Me</button>
-    <div class="about" id="about">
-        <p class="availability">Currently between roles and open to Staff or Principal engineering work.</p>
-        <p>Engineer with 20 years of hands-on experience shipping products across web, mobile, and embedded platforms,
-            in industries including energy, education, social media, logistics, and ecommerce. Founded Learndot and led
-            it to acquisition; led engineering at Foodee through its acquisition by Sodexo. Formerly a Director and
-            founder, now focused on Staff/Principal IC work: building well-designed systems that remove operational
-            toil.</p>
-        <h3>Core Skills</h3>
-        <p>
-            Full-stack Software Engineering | System Design &amp; Distributed Systems | Frontend: TypeScript /
-            JavaScript (React, MapLibre, Ember) | Backend: Ruby/Rails, Python (FastAPI), Scala, Java | Data:
-            PostgreSQL/PostGIS, DuckDB | AI &amp; LLM Integrations (OpenAI APIs, incl. Realtime) | AI-assisted
-            Development | DevOps, CI/CD &amp; Agile Practices
-        </p>
-        <h3>Impact Highlights</h3>
-        <ul>
-            <li>Designed and implemented an AI-based scheduling system that cut manual operations overhead by more than
-                50% and became key IP in Foodee's acquisition by Sodexo
-            </li>
-            <li>Led technology through two acquisitions (Learndot; Foodee/Sodexo)</li>
-            <li>Scaled an engineering team from 6 to 20+, designing the hiring and interview process</li>
-            <li>Transformed CI/CD practice, cutting release cycles from 30 days to daily deploys</li>
-        </ul>
-
-    </div>
-    <div class="icon-links">
+<header class="topbar">
+    <nav aria-label="Site">
+        <a href="./" aria-current="page">Joe Gaudet</a>
         <a href="readme.html">README</a>
-        <a href="Joe%20Gaudet%20CV.pdf">CV</a>
-        <a href="https://linkedin.com/in/josephgaudet" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/joegaudet" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://x.com/joegaudet" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://bsky.app/profile/joegaudet.bsky.social" target="_blank" title="Bluesky"><i
-                class="fas fa-cloud"></i></a>
-        <a href="https://instagram.com/joegaudet" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="cv.html">CV</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle theme">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+</header>
+
+<main>
+    <div class="hero">
+        <img src="images/background.jpg"
+             srcset="images/background-1200.jpg 1200w, images/background.jpg 2048w"
+             sizes="100vw" alt="" fetchpriority="high"/>
+        <div class="wrap hero-text">
+            <img class="avatar" src="images/profile-picture.jpg" alt="Joe Gaudet"/>
+            <h1>Joe Gaudet</h1>
+            <p class="role">Consulting Staff Engineer · Vancouver, BC</p>
+            <p class="tagline">Programmer of Computers, General Nerd, Rotator of Shapes, Ski &amp; Mountain Bike
+                enthusiast, Amateur Pugilist &amp; Singer of Musicals.</p>
+            <ul class="links">
+                <li><a href="https://github.com/joegaudet">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/josephgaudet">LinkedIn</a></li>
+                <li><a href="https://bsky.app/profile/joegaudet.bsky.social">Bluesky</a></li>
+                <li><a href="https://x.com/joegaudet">X</a></li>
+                <li><a href="https://instagram.com/joegaudet">Instagram</a></li>
+                <li><a href="mailto:joe@joegaudet.com">Email</a></li>
+            </ul>
+        </div>
     </div>
-</div>
-<script>
-    const section = document.getElementById("about");
 
-    function toggleAbout() {
-        section.classList.toggle("open");
-    }
+    <div class="wrap track">
+        <section aria-labelledby="now">
+            <h2 id="now">Now</h2>
+            <p>Consulting as a Staff engineer, hands on the tools. Twenty years shipping products across web, mobile,
+                and embedded platforms, in energy, education, social media, logistics, and ecommerce. I founded Learndot
+                and led it to acquisition, then led engineering at Foodee through its acquisition by Sodexo. These days
+                I build well-designed systems that remove operational toil.</p>
+        </section>
 
-    window.addEventListener("DOMContentLoaded", () => {
-        if (window.innerWidth <= 640) {
-            section.classList.add("open");
-        }
-    });
-</script>
+        <section aria-labelledby="projects">
+            <h2 id="projects">Open source</h2>
+            <div class="projects">
+                <article class="project harnessed">
+                    <h3><a href="/harnessed/">harnessed</a></h3>
+                    <p>Test harnesses for components and pages. Write one once and it drives your component in jsdom,
+                        Playwright, Cypress, Ember, WebdriverIO and more.</p>
+                    <pre><code><span class="k">class</span> LoginFormHarness <span class="k">extends</span> ComponentHarness {
+  @ByLabel(<span class="k">'Email'</span>) <span class="k">private accessor</span> email!: Query
+
+  <span class="k">async</span> signInAs(email: string, password: string) { … }
+}
+
+<span class="c">// the same class, in jsdom or a real browser</span>
+<span class="k">await new</span> LoginFormHarness(pw(page)).signInAs(…)</code></pre>
+                    <ul class="links">
+                        <li><a href="/harnessed/">Docs</a></li>
+                        <li><a href="https://github.com/joegaudet/harnessed">GitHub</a></li>
+                        <li><a href="https://www.npmjs.com/package/@harnessed-ts/core">npm</a></li>
+                    </ul>
+                </article>
+
+                <article class="project enums">
+                    <h3><a href="/real-enums/">real-enums</a></h3>
+                    <p>Enums that are real classes. The label, the CSS class, or what comes next lives on the value,
+                        not in an if/else ladder in every template. Adapters for WarpDrive, TanStack Query, SWR, RTK
+                        Query, Apollo and urql.</p>
+                    <pre><code><span class="k">class</span> OrderState <span class="k">extends</span> Enum {
+  <span class="k">static</span> Pending = <span class="k">new</span> OrderState(<span class="k">'pending'</span>)
+  <span class="k">static</span> Shipped = <span class="k">new</span> OrderState(<span class="k">'shipped'</span>)
+
+  @is() <span class="k">accessor</span> isPending!: boolean
+  <span class="k">get</span> className() { <span class="k">return</span> `badge badge--${<span class="k">this</span>.value}` }
+}</code></pre>
+                    <ul class="links">
+                        <li><a href="/real-enums/">Docs</a></li>
+                        <li><a href="https://github.com/joegaudet/real-enums">GitHub</a></li>
+                        <li><a href="https://www.npmjs.com/package/real-enums">npm</a></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="highlights">
+            <h2 id="highlights">Highlights</h2>
+            <ul class="plain">
+                <li>Designed and built an AI-based scheduling system that cut manual operations overhead by more than
+                    50% and became key IP in Foodee's acquisition by Sodexo</li>
+                <li>Led technology through two acquisitions (Learndot; Foodee/Sodexo)</li>
+                <li>Scaled an engineering team from 6 to 20+, designing the hiring and interview process</li>
+                <li>Transformed CI/CD practice, cutting release cycles from 30 days to daily deploys</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="skills">
+            <h2 id="skills">Tools of the trade</h2>
+            <ul class="chips">
+                <li>System design</li>
+                <li>Distributed systems</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Ember</li>
+                <li>MapLibre</li>
+                <li>Ruby on Rails</li>
+                <li>Python / FastAPI</li>
+                <li>Scala</li>
+                <li>Java</li>
+                <li>PostgreSQL / PostGIS</li>
+                <li>DuckDB</li>
+                <li>LLM integrations</li>
+                <li>Agentic development</li>
+                <li>CI/CD</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="more">
+            <h2 id="more">More</h2>
+            <p>How I work, what I value, and where I'll frustrate you: <a href="readme.html">my README</a>. The full
+                history: <a href="cv.html">my CV</a>.</p>
+        </section>
+    </div>
+</main>
 </body>
 </html>
