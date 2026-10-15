@@ -4,9 +4,9 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
     <title>Joe Gaudet – Consulting Staff Engineer</title>
-    <meta name="description" content="Joe Gaudet is a consulting Staff Engineer in Vancouver, BC, and the author of harnessed and real-enums."/>
+    <meta name="description" content="Joe Gaudet is a consulting Staff Engineer in Vancouver, BC, and the author of harnessed, real-enums and Formwright."/>
     <meta property="og:title" content="Joe Gaudet – Consulting Staff Engineer"/>
-    <meta property="og:description" content="Twenty years shipping software, two acquisitions, and open source: harnessed and real-enums."/>
+    <meta property="og:description" content="Twenty years shipping software, two acquisitions, and open source: harnessed, real-enums and Formwright."/>
     <meta property="og:image" content="https://joegaudet.com/images/background-1200.jpg"/>
     <meta property="og:url" content="https://joegaudet.com/"/>
     <meta name="twitter:card" content="summary_large_image"/>
@@ -102,6 +102,20 @@
                         <li><a href="/real-enums/">Docs</a></li>
                         <li><a href="https://github.com/joegaudet/real-enums">GitHub</a></li>
                         <li><a href="https://www.npmjs.com/package/real-enums">npm</a></li>
+                    </ul>
+                </article>
+
+                <article class="project formwright">
+                    <h3><a href="/ember-formwright/">Formwright</a></h3>
+                    <p>Declarative, accessible forms for Ember. Labels, ids, errors, aria-invalid, dirty state and
+                        nested saves are handled; bring any Standard Schema validator and any data layer.</p>
+                    <pre><code>&lt;<span class="k">Form</span> @model={{@user}} @validator={{userSchema}} @onSubmit={{@save}} <span class="k">as</span> |f|&gt;
+  &lt;<span class="k">f.Field</span> @for=<span class="k">"email"</span> @control=<span class="k">"email"</span> @label=<span class="k">"Email"</span> /&gt;
+  &lt;<span class="k">f.Field</span> @for=<span class="k">"plan"</span> @control=<span class="k">"select"</span> @options={{@plans}} /&gt;
+&lt;/<span class="k">Form</span>&gt;</code></pre>
+                    <ul class="links">
+                        <li><a href="/ember-formwright/">Docs</a></li>
+                        <li><a href="https://github.com/joegaudet/ember-formwright">GitHub</a></li>
                     </ul>
                 </article>
             </div>
