@@ -9,6 +9,7 @@
     --code-bg: #eef2f5;
     --harnessed: #7c3aed;
     --enums: #0d9488;
+    --formwright: #4f46e5;
     --photo-filter: none;
     --hero-ink: #0f1720;
     color-scheme: light;
@@ -25,6 +26,8 @@
         --code-bg: #0e151d;
         --harnessed: #a78bfa;
         --enums: #2dd4bf;
+    --formwright: #a5b4fc;
+        --formwright: #a5b4fc;
         --photo-filter: brightness(0.45) contrast(1.15);
         --hero-ink: #f3f6f9;
         color-scheme: dark;
@@ -314,6 +317,10 @@ code, pre {
 
 .project.enums {
     --tint: var(--enums);
+}
+
+.project.formwright {
+    --tint: var(--formwright);
 }
 
 .project h3 {
