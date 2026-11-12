@@ -10,6 +10,7 @@
     --harnessed: #7c3aed;
     --enums: #0d9488;
     --formwright: #4f46e5;
+    --joinery: #b45309;
     --photo-filter: none;
     --hero-ink: #0f1720;
     color-scheme: light;
@@ -26,8 +27,8 @@
         --code-bg: #0e151d;
         --harnessed: #a78bfa;
         --enums: #2dd4bf;
-    --formwright: #a5b4fc;
         --formwright: #a5b4fc;
+        --joinery: #fbbf24;
         --photo-filter: brightness(0.45) contrast(1.15);
         --hero-ink: #f3f6f9;
         color-scheme: dark;
@@ -44,6 +45,8 @@
     --code-bg: #0e151d;
     --harnessed: #a78bfa;
     --enums: #2dd4bf;
+    --formwright: #a5b4fc;
+    --joinery: #fbbf24;
     --photo-filter: brightness(0.45) contrast(1.15);
     --hero-ink: #f3f6f9;
     color-scheme: dark;
@@ -309,6 +312,8 @@ code, pre {
     border-top: 3px solid var(--tint);
     border-radius: 0.75rem;
     padding: 1.25rem 1.25rem 1rem;
+    /* Lets the card shrink below its widest <pre>, which scrolls instead of the page. */
+    min-width: 0;
 }
 
 .project.harnessed {
@@ -321,6 +326,10 @@ code, pre {
 
 .project.formwright {
     --tint: var(--formwright);
+}
+
+.project.joinery {
+    --tint: var(--joinery);
 }
 
 .project h3 {
