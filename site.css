@@ -11,6 +11,7 @@
     --enums: #0d9488;
     --formwright: #4f46e5;
     --joinery: #b45309;
+    --switchyard: #2563eb;
     --photo-filter: none;
     --hero-ink: #0f1720;
     color-scheme: light;
@@ -29,6 +30,7 @@
         --enums: #2dd4bf;
         --formwright: #a5b4fc;
         --joinery: #fbbf24;
+        --switchyard: #60a5fa;
         --photo-filter: brightness(0.45) contrast(1.15);
         --hero-ink: #f3f6f9;
         color-scheme: dark;
@@ -47,6 +49,7 @@
     --enums: #2dd4bf;
     --formwright: #a5b4fc;
     --joinery: #fbbf24;
+    --switchyard: #60a5fa;
     --photo-filter: brightness(0.45) contrast(1.15);
     --hero-ink: #f3f6f9;
     color-scheme: dark;
@@ -330,6 +333,10 @@ code, pre {
 
 .project.joinery {
     --tint: var(--joinery);
+}
+
+.project.switchyard {
+    --tint: var(--switchyard);
 }
 
 .project h3 {

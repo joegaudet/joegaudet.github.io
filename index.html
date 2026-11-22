@@ -4,9 +4,9 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
     <title>Joe Gaudet – Consulting Staff Engineer</title>
-    <meta name="description" content="Joe Gaudet is a consulting Staff Engineer in Vancouver, BC, and the author of harnessed, real-enums, Formwright and Joinery."/>
+    <meta name="description" content="Joe Gaudet is a consulting Staff Engineer in Vancouver, BC, and the author of harnessed, real-enums, Formwright, Joinery and switchyard."/>
     <meta property="og:title" content="Joe Gaudet – Consulting Staff Engineer"/>
-    <meta property="og:description" content="Twenty years shipping software, two acquisitions, and open source: harnessed, real-enums, Formwright and Joinery."/>
+    <meta property="og:description" content="Twenty years shipping software, two acquisitions, and open source: harnessed, real-enums, Formwright, Joinery and switchyard."/>
     <meta property="og:image" content="https://joegaudet.com/images/background-1200.jpg"/>
     <meta property="og:url" content="https://joegaudet.com/"/>
     <meta name="twitter:card" content="summary_large_image"/>
@@ -132,6 +132,27 @@
                     <ul class="links">
                         <li><a href="/ember-joinery/">Docs</a></li>
                         <li><a href="https://github.com/joegaudet/ember-joinery">GitHub</a></li>
+                    </ul>
+                </article>
+
+                <article class="project switchyard">
+                    <h3><a href="/switchyard/">switchyard</a></h3>
+                    <p>Statecharts for Ember, written as classes. States are real-enums values, events are decorated
+                        methods, context is tracked fields: everything xstate does, on the same semantics, with the
+                        diagram drawn from the code.</p>
+                    <pre><code><span class="k">class</span> Fetch <span class="k">extends</span> Machine&lt;FetchState&gt; {
+  @tracked user?: User
+
+  @transition({ from: FetchState.Idle, to: FetchState.Loading })
+  fetch() {}
+
+  @invoke(FetchState.Loading, { onDone: FetchState.Done })
+  <span class="k">async</span> load(signal: AbortSignal) { … }
+}</code></pre>
+                    <ul class="links">
+                        <li><a href="/switchyard/">Docs</a></li>
+                        <li><a href="https://github.com/joegaudet/switchyard">GitHub</a></li>
+                        <li><a href="https://www.npmjs.com/package/@switchyard-ts/core">npm</a></li>
                     </ul>
                 </article>
             </div>
